@@ -14,8 +14,14 @@
 	<div class="container">
 		<div class="navbar-header">
 			<img title="Rusia 2018"	src="http://www.balonazos.com/wp-content/uploads/2015/11/RUSIA2018.png" />
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 		</div>
-	<div class="container">
+	<div class="container" id="contenedor">
 		<ul class="nav navbar-nav">
 			<li class="active"><a  href="#">Inicio</a></li>
 			<li ><a  href="#">Sede</a></li>
@@ -30,12 +36,13 @@
 				<ul class="dropdown-menu">
 					<li><a href="#">Polonia</a></li>
 					<li><a href="#">Senegal</a></li>
-					<li><a href="#">Colombia</a></li>
+					<li><a href="#" id="selh3">Colombia</a></li>
 					<li><a href="#">Japón</a></li>
 				</ul>
 			</li>
 		</ul>
 	</div>
+
 	</div>
 </nav>
 <div class="row">
@@ -119,6 +126,10 @@
 		<p class="text-muted">Programación Aplicaciones Web - 2018</p>
 	</div>
 </footer>
-
+<script>
+		$("#selh3").click(function(event){
+			$("#contenedor").load('html/colombia.html');
+		});
+	</script>
 </body>
 </html>
